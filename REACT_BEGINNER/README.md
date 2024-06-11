@@ -1,18 +1,9 @@
-# AIPlaylistPal (Pre-Alpha)
-A full-stack application utilizing the open YouTube API and GPT3 api's to generate and upload AI generated playlists to a user's YouTube Account.
+# REACT Beginner Course Notes
 
-### Full Stack Diagram
-![stack](https://github.com/TarikVu/imgs/blob/main/AIPlayListPal/Stack.PNG)
+Author: [iamshaunjp](https://github.com/iamshaunjp)
 
-## Table of Contents
-1. [Features](#feats)
-9. [Appendix](#apdx)
-
-## <a name="feats"></a> Features
-### Core Functionalites
-Utilize these open api's to create and upload a generated playlist onto the user's Youtube account:
-- [YouTube](https://developers.google.com/youtube/v3/docs) 
-- [OpenAPI (GPT3)](https://platform.openai.com/)
+- [Source Code](https://github.com/iamshaunjp/Complete-React-Tutorial)
+- [Video Tutorial Series](https://www.youtube.com/watch?v=j942wKiXFu8&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d)
 
 ### JSON server
 Under the "data" directory we are utilizing a db.json file to set up a lightweight mock database for testing purposes.
@@ -21,9 +12,6 @@ one or not for its purposes.
 
 
 *JSON server will automatically make a unique ID upon a post request.*
-
-### Planned Functionality
-- Integrate the [Spotify Open API](https://developer.spotify.com/documentation/web-api) to lift playlists from spoitfy and upload the playlist to YouTube.
 
 
 ## <a name="apdx"></a> Appendix 
