@@ -33,7 +33,7 @@ npm install @reduxjs/toolkit react-redux
 ```
 _clear misc react files_
 - public → logo images
-- src → [App.cs, App.test.js, logo,svg, reportWebVitals.js, setupTests.js]
+- src → `App.cs, App.test.js, logo,svg, reportWebVitals.js, setupTests.js` 
 - Remove reportwebvitals from index.js & logo import from App.js
 
 
