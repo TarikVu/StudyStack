@@ -6,7 +6,7 @@ Redux is a predictable state container for JavaScript applications, commonly use
 >[!NOTE]
 > Because Redux is primarily used with React, this tutorial also serves as a React review and tutorial. This Tutorial would have been better taken directly after a React introduction tutorial but was started midway through a MERN full stack tutorial. 
 
-- [Video Tutorial (13:55)](https://www.youtube.com/watch?v=NqzdVN2tyvQ&list=PL0Zuz27SZ-6M1J5I1w2-uZx36Qp6qhjKo&index=8)
+- [Video Tutorial](https://www.youtube.com/watch?v=NqzdVN2tyvQ&list=PL0Zuz27SZ-6M1J5I1w2-uZx36Qp6qhjKo&index=8)
 - [Source Code](https://github.com/gitdagray/react_redux_toolkit)
 
 
@@ -33,7 +33,12 @@ npm install @reduxjs/toolkit react-redux
 ```
 _clear misc react files_
 - public → logo images
-- src → `App.cs, App.test.js, logo,svg, reportWebVitals.js, setupTests.js` 
+- src → 
+    1. `App.cs`
+    1. `App.test.js` 
+    1. `logo,svg` 
+    1. `reportWebVitals.js` 
+    1. `setupTests.js` 
 - Remove reportwebvitals from index.js & logo import from App.js
 
 
