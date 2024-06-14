@@ -5,6 +5,9 @@
 - [Selector & Dispatch](#ch1.3)
 - [Putting it alltogether](#ch1.4)
 
+_Preview:_
+
+<img src = "https://github.com/TarikVu/imgs/blob/main/Redux-Intro/redux-ch1.png"/>
 
 
 ### <a name="ch1.1"></a> Stores & Providers 
