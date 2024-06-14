@@ -1,4 +1,4 @@
-# Chapter 1: Making a basic Redux component
+# Chapter 1: Making a basic Redux Counter component
 
 - [Stores & Providers](#ch1.1)
 - [Slices & Reducers](#ch1.2)
