@@ -13,11 +13,11 @@ Redux is a predictable state container for JavaScript applications, commonly use
  
 ## Table of Contents
 [Setup](#setup)
-1. [Making a basic Redux component](#ch1)
-    - [Stores & Providers](#ch1.1)
-    - [Slices & Reducers](#ch1.2)
-    - [Selector & Dispatch](#ch1.3)
-    - [Putting it alltogether](#ch1.4)
+1. [Making a basic Redux component](https://github.com/TarikVu/StudyStack/tree/main/redux-introduction/Chapter-1)
+    - [Stores & Providers]
+    - [Slices & Reducers]
+    - [Selector & Dispatch]
+    - [Putting it alltogether]
 
 
 #### Summary:
