@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { postAdded } from "./postsSlice";
 import { selectAllUsers } from "../users/usersSlice";
 
-// Basic form for inputs. (entirely copied from course)
 const AddPostForm = () => {
     const dispatch = useDispatch()
 
