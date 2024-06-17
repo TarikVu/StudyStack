@@ -4,6 +4,8 @@ import PostAuthor from "./PostAuthor";
 import TimeAgo from "./TimeAgo";
 import ReactionButtons from "./ReactionButtons";
 
+
+// The PostLists component that is displayed on the user's screen.
 const PostsList = () => {
     const posts = useSelector(selectAllPosts)
 

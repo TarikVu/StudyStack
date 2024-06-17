@@ -1,6 +1,7 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
 import { sub } from 'date-fns';
 
+// Premade Posts (for more practical cases, we would query from DB for the initial state.)
 const initialState = [
     {
         id: '1',
@@ -34,10 +35,16 @@ const postsSlice = createSlice({
     name: 'posts',
     initialState,
     reducers: {
+
+        // Adding Posts
         postAdded: {
+
+            // reducer() handles the actual state change
             reducer(state, action) {
                 state.push(action.payload)
             },
+
+            // Customizes the payload of the action 
             prepare(title, content, userId) {
                 return {
                     payload: {
@@ -57,6 +64,7 @@ const postsSlice = createSlice({
                 }
             }
         },
+
         reactionAdded(state, action) {
             const { postId, reaction } = action.payload
             const existingPost = state.find(post => post.id === postId)

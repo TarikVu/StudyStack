@@ -7,6 +7,7 @@ import { selectAllUsers } from "../users/usersSlice";
 const AddPostForm = () => {
     const dispatch = useDispatch()
 
+    // React Hooks for the form 
     const [title, setTitle] = useState('')
     const [content, setContent] = useState('')
     const [userId, setUserId] = useState('')
