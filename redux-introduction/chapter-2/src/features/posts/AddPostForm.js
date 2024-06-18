@@ -22,7 +22,7 @@ const AddPostForm = () => {
 
         if (title && content) {
 
-            // Goes to the prepare in our postsSlice
+            // Dispatches to the prepare in our postsSlice
             dispatch(
                 postAdded(title, content, userId)
             )
@@ -40,6 +40,7 @@ const AddPostForm = () => {
         </option>
     ))
 
+    // The JSX that we return to create the React component.
     return (
         <section>
             <h2>Add a New Post</h2>

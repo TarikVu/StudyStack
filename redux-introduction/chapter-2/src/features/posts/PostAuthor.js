@@ -1,6 +1,9 @@
 import { useSelector } from "react-redux";
 import { selectAllUsers } from "../users/usersSlice";
 
+// A script letting us find the name of an author from our author slices given an ID.
+
+// A post Author expects a userId
 const PostAuthor = ({ userId }) => {
     const users = useSelector(selectAllUsers)
 

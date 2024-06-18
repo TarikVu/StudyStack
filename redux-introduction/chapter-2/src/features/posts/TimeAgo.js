@@ -1,5 +1,9 @@
 import { parseISO, formatDistanceToNow } from 'date-fns';
 
+
+// Our script to display time ago, utilizing the library 'date-fns'
+
+// Timeago Expects a timestamp.
 const TimeAgo = ({ timestamp }) => {
     let timeAgo = ''
     if (timestamp) {

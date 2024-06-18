@@ -1,6 +1,9 @@
 import { useDispatch } from "react-redux";
 import { reactionAdded } from "./postsSlice";
 
+
+// A script for our reaction buttons components which are to be displayed on the posts component.
+
 const reactionEmoji = {
     thumbsUp: '👍',
     wow: '😮',
@@ -9,7 +12,9 @@ const reactionEmoji = {
     coffee: '☕'
 }
 
+// Reaction buttons expects an associated post.
 const ReactionButtons = ({ post }) => {
+    
     const dispatch = useDispatch()
 
     const reactionButtons = Object.entries(reactionEmoji).map(([name, emoji]) => {
