@@ -67,4 +67,4 @@ const orderedPosts = posts.slice().sort((a, b) => b.date.localeCompare(a.date));
     )
 ```
 ### Summary
-After grabbing and ordering the data of ordered posts, we call `map()` on this array in order to wrap the posts in an `<article>` element.  When mapping we utilize the posts' fields (setup within `prepare` in the slice) to display the userId, timestamp and reaction buttons.  
+After grabbing and ordering the data of ordered posts, we call `map()` on this array in order to wrap each of the posts in an `<article>` element. This will create a component for each post.  When mapping we utilize the posts' fields (setup within `prepare` in the slice) to display the userId, timestamp and reaction buttons.  

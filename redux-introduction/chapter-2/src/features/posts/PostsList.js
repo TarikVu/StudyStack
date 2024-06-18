@@ -14,7 +14,7 @@ const PostsList = () => {
     // create a shallow copy w/ .slice and then sort the elements
     const orderedPosts = posts.slice().sort((a, b) => b.date.localeCompare(a.date))
 
-    // render the posts after ordering them.
+    // render the list posts after ordering them utilizing map()
     const renderedPosts = orderedPosts.map(post => (
         <article key={post.id}>
             <h3>{post.title}</h3>
@@ -22,7 +22,7 @@ const PostsList = () => {
             <p className="postCredit">
 
                 {/* post.userId, and date defined in slice's prepare()  */}
-                
+
                 <PostAuthor userId={post.userId} />
                 <TimeAgo timestamp={post.date} />
             </p>
