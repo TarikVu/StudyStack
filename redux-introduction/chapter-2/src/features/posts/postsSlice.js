@@ -36,7 +36,7 @@ const postsSlice = createSlice({
     initialState,
     reducers: {
 
-        // Adding Posts
+        // Adding Posts 
         postAdded: {
 
             // reducer() handles the actual state change
@@ -44,8 +44,12 @@ const postsSlice = createSlice({
                 state.push(action.payload)
             },
 
-            // Customizes the payload of the action 
+            // Customizes the payload of the action
+            // This is invoked before the "reducer(state,action)" above
             prepare(title, content, userId) {
+
+                // When using prepare, we need to return the 
+                // payload which we have defined. 
                 return {
                     payload: {
                         id: nanoid(),

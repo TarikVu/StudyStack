@@ -19,11 +19,14 @@ const AddPostForm = () => {
     const onAuthorChanged = e => setUserId(e.target.value)
 
     const onSavePostClicked = () => {
+
         if (title && content) {
+
+            // Goes to the prepare in our postsSlice
             dispatch(
-                // Goes to the prepare in our slice
                 postAdded(title, content, userId)
             )
+
             setTitle('')
             setContent('')
         }
