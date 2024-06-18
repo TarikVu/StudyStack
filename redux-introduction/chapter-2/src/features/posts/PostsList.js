@@ -7,6 +7,8 @@ import ReactionButtons from "./ReactionButtons";
 
 // The PostLists component that is displayed on the user's screen.
 const PostsList = () => {
+
+    // Our post slice
     const posts = useSelector(selectAllPosts)
 
     const orderedPosts = posts.slice().sort((a, b) => b.date.localeCompare(a.date))

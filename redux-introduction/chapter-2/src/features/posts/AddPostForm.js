@@ -21,6 +21,7 @@ const AddPostForm = () => {
     const onSavePostClicked = () => {
         if (title && content) {
             dispatch(
+                // Goes to the prepare in our slice
                 postAdded(title, content, userId)
             )
             setTitle('')
