@@ -2,15 +2,21 @@ import { createSlice, nanoid, createAsyncThunk } from "@reduxjs/toolkit";
 import { sub } from 'date-fns';
 import axios from "axios";
 
+// URL for api calls, in real apps this could be a api key from mongodb or something.
 const POSTS_URL = 'https://jsonplaceholder.typicode.com/posts';
 
 const initialState = {
+
+    // our state now hold a posts object which will be populated. 
     posts: [],
     status: 'idle', //'idle' | 'loading' | 'succeeded' | 'failed'
     error: null
 }
 
+// Fetching posts Asynchronously 
 export const fetchPosts = createAsyncThunk('posts/fetchPosts', async () => {
+
+    // Axios returns a promise
     const response = await axios.get(POSTS_URL)
     return response.data
 })
@@ -55,6 +61,7 @@ const postsSlice = createSlice({
             }
         }
     },
+
     extraReducers(builder) {
         builder
             .addCase(fetchPosts.pending, (state, action) => {
@@ -62,6 +69,7 @@ const postsSlice = createSlice({
             })
             .addCase(fetchPosts.fulfilled, (state, action) => {
                 state.status = 'succeeded'
+                
                 // Adding date and reactions
                 let min = 1;
                 const loadedPosts = action.payload.map(post => {

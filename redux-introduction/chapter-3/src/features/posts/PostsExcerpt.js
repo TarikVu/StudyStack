@@ -2,6 +2,8 @@ import PostAuthor from "./PostAuthor";
 import TimeAgo from "./TimeAgo";
 import ReactionButtons from "./ReactionButtons";
 
+// Post component that has been pulled out for
+// Seperation of concerns, post list now displays the postExcerpt
 const PostsExcerpt = ({ post }) => {
     return (
         <article>

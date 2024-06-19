@@ -11,19 +11,31 @@ const PostsList = () => {
     const error = useSelector(getPostsError);
 
     useEffect(() => {
+        
+        // Check if a fetch has been made yet
         if (postStatus === 'idle') {
             dispatch(fetchPosts())
         }
-    }, [postStatus, dispatch])
+    },
+    // Dependency array for useEffect
+    // Review: useEffect will invoke when the component is first mounted or if
+    // an item in the dependencys change.
+    [postStatus, dispatch])
 
     let content;
     if (postStatus === 'loading') {
+
         content = <p>"Loading..."</p>;
+
     } else if (postStatus === 'succeeded') {
+
         const orderedPosts = posts.slice().sort((a, b) => b.date.localeCompare(a.date))
         content = orderedPosts.map(post => <PostsExcerpt key={post.id} post={post} />)
+
     } else if (postStatus === 'failed') {
+
         content = <p>{error}</p>;
+
     }
 
     return (
