@@ -14,6 +14,7 @@ const initialState = {
 }
 
 // Fetching posts Asynchronously 
+// Fetching happens from the react component when useEffect() is invoked.
 export const fetchPosts = createAsyncThunk('posts/fetchPosts', async () => {
 
     // Axios returns a promise
@@ -69,7 +70,7 @@ const postsSlice = createSlice({
             })
             .addCase(fetchPosts.fulfilled, (state, action) => {
                 state.status = 'succeeded'
-                
+
                 // Adding date and reactions
                 let min = 1;
                 const loadedPosts = action.payload.map(post => {
