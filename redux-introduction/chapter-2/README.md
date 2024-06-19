@@ -3,7 +3,10 @@
 1. [The Form](#form)
     - [Data Flow from Component to slice](#flow)
     - [Reducers Reducer & Prepare](#rrp)
+    
 1. [The list of posts](#list)
+    - [Mapping](#map)
+
 
 <img src = 'https://github.com/TarikVu/imgs/blob/main/Redux-Intro/redux-ch2.PNG' width= 180 height = 330/> 
 
@@ -66,5 +69,5 @@ const orderedPosts = posts.slice().sort((a, b) => b.date.localeCompare(a.date));
         </section>
     )
 ```
-### Summary
+### <a name = "map"></a> Mapping
 After grabbing and ordering the data of ordered posts, we call `map()` on this array in order to wrap each of the posts in an `<article>` element. This will create a component for each post.  When mapping we utilize the posts' fields (setup within `prepare` in the slice) to display the userId, timestamp and reaction buttons.  
