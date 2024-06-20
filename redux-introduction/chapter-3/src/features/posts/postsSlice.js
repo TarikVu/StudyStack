@@ -13,20 +13,7 @@ const initialState = {
     error: null
 }
 
-// Fetching posts Asynchronously 
-// Fetching happens from the react component when useEffect() is invoked.
-export const fetchPosts = createAsyncThunk('posts/fetchPosts', async () => {
-
-    // Axios returns a promise
-    const response = await axios.get(POSTS_URL)
-    return response.data
-})
-
-export const addNewPost = createAsyncThunk('posts/addNewPost', async (initialPost) => {
-    const response = await axios.post(POSTS_URL, initialPost)
-    return response.data
-})
-
+// The main structure of our slice for post slice
 const postsSlice = createSlice({
     name: 'posts',
     initialState,
@@ -54,7 +41,7 @@ const postsSlice = createSlice({
                 }
             }
         },
-        
+
         reactionAdded(state, action) {
             const { postId, reaction } = action.payload
             const existingPost = state.posts.find(post => post.id === postId)
@@ -120,6 +107,22 @@ const postsSlice = createSlice({
             })
     }
 })
+
+// Export our fetch and adding methods
+// Fetching posts Asynchronously 
+// Fetching happens from the react component when useEffect() is invoked.
+export const fetchPosts = createAsyncThunk('posts/fetchPosts', async () => {
+
+    // Axios returns a promise
+    const response = await axios.get(POSTS_URL)
+    return response.data
+})
+
+export const addNewPost = createAsyncThunk('posts/addNewPost', async (initialPost) => {
+    const response = await axios.post(POSTS_URL, initialPost)
+    return response.data
+})
+
 
 // export the states of our slice
 export const selectAllPosts = (state) => state.posts.posts;
