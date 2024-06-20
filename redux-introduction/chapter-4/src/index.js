@@ -11,7 +11,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 store.dispatch(fetchPosts());
 store.dispatch(fetchUsers());
 
+// Using the DOM like this has been depricated for react.
+// chaning to the current format caused the app to not render, 
+// moving on for now
 ReactDOM.render(
+
   <React.StrictMode>
     <Provider store={store}>
       <Router>
@@ -21,5 +25,6 @@ ReactDOM.render(
       </Router>
     </Provider>
   </React.StrictMode>,
+
   document.getElementById('root')
 );

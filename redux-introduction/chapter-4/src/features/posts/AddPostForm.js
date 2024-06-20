@@ -43,6 +43,8 @@ const AddPostForm = () => {
 
     }
 
+    // Dropdown to select the author of the post.
+    // The author is from the list of all users.
     const usersOptions = users.map(user => (
         <option key={user.id} value={user.id}>
             {user.name}
@@ -66,6 +68,7 @@ const AddPostForm = () => {
                     <option value=""></option>
                     {usersOptions}
                 </select>
+
                 <label htmlFor="postContent">Content:</label>
                 <textarea
                     id="postContent"

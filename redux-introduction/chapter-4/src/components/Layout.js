@@ -6,6 +6,8 @@ const Layout = () => {
         <>
             <Header />
             <main className="App">
+
+                {/* Nested routes will show in outlet, see App.js */}
                 <Outlet />
             </main>
         </>

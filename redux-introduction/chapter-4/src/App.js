@@ -8,8 +8,10 @@ import { Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <Routes>
+
       <Route path="/" element={<Layout />}>
 
+        {/* These nested routes are used as the "outlet" aka placeholder */}
         <Route index element={<PostsList />} />
 
         <Route path="post">
