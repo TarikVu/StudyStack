@@ -6,6 +6,7 @@ import PostsExcerpt from "./PostsExcerpt";
 const PostsList = () => {
     const dispatch = useDispatch();
 
+    // access the states of our slice.
     const posts = useSelector(selectAllPosts);
     const postStatus = useSelector(getPostsStatus);
     const error = useSelector(getPostsError);

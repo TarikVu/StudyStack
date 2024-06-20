@@ -1,8 +1,9 @@
 # Chapter 3: Async
 
 1. [Thunks & Axios](#ta)
-    - []()
 
+### Other Changes
+- PostsExcerpt Addded to encapsulate the posts component.
 
 
 ## Thunks & Axios
