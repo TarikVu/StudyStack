@@ -14,7 +14,7 @@ function App() {
 
         {/* These nested routes are used as the "outlet" aka placeholder */}
 
-
+        
         <Route index element={<PostsList />} />
 
         {/* 
