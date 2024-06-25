@@ -1,6 +1,6 @@
-# Chapter 5: 
+# Chapter 5: Optimizations
 
-1. [State Management with Redux](#state)
+1. [](#)
 
 
 #### Changes
