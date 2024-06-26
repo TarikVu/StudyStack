@@ -1,10 +1,4 @@
 # Chapter 5: Optimizations
 
-1. [](#)
-
-
-#### Changes
-- 
-
-
+This Section Covers using the React Profiler 
 
