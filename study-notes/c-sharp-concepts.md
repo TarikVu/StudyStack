@@ -36,4 +36,3 @@
 - **Online Courses**: Pluralsight, Udemy, Coursera.
 - **Documentation**: Official Microsoft documentation for C# and .NET.
 
-Good luck with your interview! If you have specific areas you want to focus on or any other questions, feel free to ask.
