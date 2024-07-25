@@ -1,6 +1,6 @@
 # REACT Beginner Course Notes
 
-Author: [iamshaunjp](https://github.com/iamshaunjp)
+Course Author: [iamshaunjp](https://github.com/iamshaunjp)
 
 - [Source Code](https://github.com/iamshaunjp/Complete-React-Tutorial)
 - [Video Tutorial Series](https://www.youtube.com/watch?v=j942wKiXFu8&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d)
