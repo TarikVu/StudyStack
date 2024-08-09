@@ -5,5 +5,5 @@ This is a collection of different online courses that I am currently taking in o
 |-----------------------|-------------|----------|----------------|----------|
 | React introduction    |⬜           | ✅      |  5/21/24       |          |
 | Redux introduction    |⬜           | ✅      |  8/9/2024      |          |     
-| MERN full course      |✅           | ⬜      |                | *On hold for Redux course |
+| MERN full course      |✅           | ⬜      |                |          |
 
