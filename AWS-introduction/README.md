@@ -36,7 +36,7 @@ Usage: For a full-stack React application, IAM Identity Center helps streamline 
 - Created MFA for IAM user TarikVu
 - (Skipped) Install AWS CLI
 
-
+---
 - [Configure AWS Profile for local development](https://docs.amplify.aws/react/start/account-setup/) ❌
 - [Install Node.js](https://nodejs.org/en/download/package-manager) ✅
 - Familiar with GitHub. ✅
