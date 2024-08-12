@@ -1,5 +1,4 @@
 # Project Ideas 
-Recommended by ToAnh
 
 ### Project 1: [Build a Full Stack React Application via AWS](https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/)
 This will show CI/CD _(Continuous Integration/Continuous Deployment or Delivery)_ workflow with a serverless backend.  
