@@ -4,8 +4,13 @@
 
 In this tutorial, you will learn how to create a simple full-stack web application using AWS Amplify. Amplify offers a Git-based CI/CD workflow for building, deploying, and hosting single-page web applications or static sites with serverless backends.
 
-## Prerequsites:
-- [Setting Up Your AWS Environment](https://aws.amazon.com/getting-started/guides/setup-environment/) ✅
+## [Setting Up Your AWS Environment](https://aws.amazon.com/getting-started/guides/setup-environment/) ✅
+
+### Summary:
+- Setup MFA with Tarik's iPhone 13 max pro for **root user**
+- Created admin group and added user TarikVu to it.
+- Created MFA for IAM user TarikVu
+- (Skipped) Install AWS CLI
   
 ### Notes:
 **Root User**<br>
@@ -30,14 +35,15 @@ What It Is: IAM Identity Center (formerly AWS SSO) provides centralized access m
 
 Usage: For a full-stack React application, IAM Identity Center helps streamline user access management, especially if you have multiple AWS accounts or need to manage access for multiple team members.
 
-### Tasks done:
-- Setup MFA with Tarik's iPhone 13 max pro for **root user**
-- Created admin group and added user TarikVu to it.
-- Created MFA for IAM user TarikVu
-- (Skipped) Install AWS CLI
 
----
-- [Configure AWS Profile for local development](https://docs.amplify.aws/react/start/account-setup/) ❌
+
+
+## [Configure AWS Profile for local development](https://docs.amplify.aws/react/start/account-setup/) ❌
+### Summary:
+
+### Notes:
+
+### Other Prerequsites:
 - [Install Node.js](https://nodejs.org/en/download/package-manager) ✅
 - Familiar with GitHub. ✅
 
