@@ -5,6 +5,10 @@ Recommended by ToAnh
 This will show CI/CD _(Continuous Integration/Continuous Deployment or Delivery)_ workflow with a serverless backend.  
 ToAnh said this is accomplishable within a few hours and to write a blog aftwards.
 
+### *Ideas*
+- TaskBin - a Kanban task flow board
+- Personal blog site
+
 ### Project 2: [Create a Continuous Delivery Pipeline](https://aws.amazon.com/getting-started/hands-on/create-continuous-delivery-pipeline/?ref=gsrchandson)
 Highlights version control system and how to do best practices on how to update source code.
 
