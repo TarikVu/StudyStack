@@ -40,7 +40,7 @@ Usage: For a full-stack React application, IAM Identity Center helps streamline 
 
 
 
-## [Configure AWS Profile for local development](https://docs.amplify.aws/react/start/account-setup/) ❌
+## [Configure AWS Profile for local development](https://docs.amplify.aws/react/start/account-setup/) ✅
 ### Summary:
 - Added Amplify permissions to TarikVu
 - Installed [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
