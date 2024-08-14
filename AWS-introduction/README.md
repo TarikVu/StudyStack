@@ -2,6 +2,8 @@
 > [!NOTE]
 > This directory is to be used as notes.  The actual projects created via these AWS tutorials can be found on my GitHub Directory.
 
+[Deployed URL](https://main.d2lb1ebjku01lx.amplifyapp.com/)
+
 [CLI setup](https://www.youtube.com/watch?v=gswVHTrRX8I)
 
 In this tutorial, you will learn how to create a simple full-stack web application using AWS Amplify. Amplify offers a Git-based CI/CD workflow for building, deploying, and hosting single-page web applications or static sites with serverless backends.
@@ -44,6 +46,7 @@ Usage: For a full-stack React application, IAM Identity Center helps streamline 
 ### Summary:
 - Added Amplify permissions to TarikVu
 - Installed [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+- Deployed Simple app via amplify
 
   
 ### Notes:
