@@ -8,12 +8,13 @@ In this tutorial, you will learn how to create a simple full-stack web applicati
 
 
 ### Table of Contents:
-- [Prerequsites](#pre)
+- Prerequsites
   - [Setting up your AWS enviroment](#setup)
   - [Configure AWS for local development](#config)
+- [Tasks](#tasks)
     
 
-# <a name = "pre"></a>Prerequsites
+
 ## <a name = "setup"></a>[Setting Up Your AWS Environment](https://aws.amazon.com/getting-started/guides/setup-environment/) ✅
 
 ### Summary:
@@ -60,10 +61,23 @@ Usage: For a full-stack React application, IAM Identity Center helps streamline 
 AWS Amplify is a set of tools and services that help developers build scalable full-stack applications, particularly front-end web and mobile apps.
 
 
-
 ### Other Prerequsites:
 - [Install Node.js](https://nodejs.org/en/download/package-manager) ✅
 - Familiar with GitHub. ✅
 
-# Task 1
 
+## <a name="tasks"></a> Tasks
+- **Task 1: Deploy and Host A react App**
+  - Sets up the react app and initializes with npm commands
+  - Sets up the Git repo
+  - **Sets up Deployment** and Installs Amplify packages.
+
+- **Task 2: Initialize Local App<br>**
+  - Sets up Amplify Auth, Data, & Storage
+  - Sets up **Sandbox**
+
+- **Task 3: Add Authentication**
+  - Install Amplify Libraries
+  - UI and CSS Code Provided for basic login
+  - Credential Authentication
+  
