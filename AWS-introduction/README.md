@@ -1,14 +1,20 @@
-# [Introduction: Build a Full Stack React Application](https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/)
+# [Build a Full Stack React Application with AWS Amplify](https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/)
 > [!NOTE]
 > This directory is to be used as notes.  The actual projects created via these AWS tutorials can be found on my GitHub Directory.
 
-[Deployed URL](https://main.d2lb1ebjku01lx.amplifyapp.com/)
-
-[CLI setup](https://www.youtube.com/watch?v=gswVHTrRX8I)
+[Deployed URL ➡](https://main.d2lb1ebjku01lx.amplifyapp.com/)
 
 In this tutorial, you will learn how to create a simple full-stack web application using AWS Amplify. Amplify offers a Git-based CI/CD workflow for building, deploying, and hosting single-page web applications or static sites with serverless backends.
 
-## [Setting Up Your AWS Environment](https://aws.amazon.com/getting-started/guides/setup-environment/) ✅
+
+### Table of Contents:
+- [Prerequsites](#pre)
+  - [Setting up your AWS enviroment](#setup)
+  - [Configure AWS for local development](#config)
+    
+
+# <a name = "pre"></a>Prerequsites
+## <a name = "setup"></a>[Setting Up Your AWS Environment](https://aws.amazon.com/getting-started/guides/setup-environment/) ✅
 
 ### Summary:
 - Setup MFA with Tarik's iPhone 13 max pro for **root user**
@@ -42,7 +48,7 @@ Usage: For a full-stack React application, IAM Identity Center helps streamline 
 
 
 
-## [Configure AWS Profile for local development](https://docs.amplify.aws/react/start/account-setup/) ✅
+## <a name="config"></a>[Configure AWS Profile for local development](https://docs.amplify.aws/react/start/account-setup/) ✅
 ### Summary:
 - Added Amplify permissions to TarikVu
 - Installed [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
@@ -58,4 +64,6 @@ AWS Amplify is a set of tools and services that help developers build scalable f
 ### Other Prerequsites:
 - [Install Node.js](https://nodejs.org/en/download/package-manager) ✅
 - Familiar with GitHub. ✅
+
+# Task 1
 
