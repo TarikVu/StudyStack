@@ -12,7 +12,7 @@ In this tutorial, you will learn how to create a simple full-stack web applicati
   - [Setting up your AWS enviroment](#setup)
   - [Configure AWS for local development](#config)
 - [Tasks](#tasks)
-    
+- [How to use the cloud](#cloud)    
 
 
 ## <a name = "setup"></a>[Setting Up Your AWS Environment](https://aws.amazon.com/getting-started/guides/setup-environment/) ✅
@@ -80,4 +80,18 @@ AWS Amplify is a set of tools and services that help developers build scalable f
   - Install Amplify Libraries
   - UI and CSS Code Provided for basic login
   - Credential Authentication
-  
+ 
+## <a name="cloud"></a> How to use the cloud
+Refer to this [article](https://docs.amplify.aws/react/start/account-setup/) to setup the local enviroment.
+
+A cloud sandbox enviroment is needed in order to use Amplify's backend.  
+We can spin up a local enviroment with: 
+```
+npx ampx sandbox
+```
+
+### Sign in page:
+This sign in page is a defaulted one provided by AWS amplify, at the moment it is possible to modify the CSS styling, however modifying the UI in depth may take more research.
+
+The main app is wrapped in `<Authenticator>`  This is from the library "@aws-amplify/ui-react"
+If we want to just display the UI that has to do with creating and deleting notes, we can dismiss the amplify packages but keep in mind this will render any of the main backend functionalities useless.
