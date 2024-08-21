@@ -85,10 +85,15 @@ AWS Amplify is a set of tools and services that help developers build scalable f
 Refer to this [article](https://docs.amplify.aws/react/start/account-setup/) to setup the local enviroment.
 
 A cloud sandbox enviroment is needed in order to use Amplify's backend.  
-We can spin up a local enviroment with: 
-```
-npx ampx sandbox
-```
+- We can spin up a local enviroment with: 
+```npx ampx sandbox```
+- To delete a sandbox:
+```ctrl+c```
+### How to check if a sandbox is currently running on the cloud
+1.) Sign in to AWS services
+2.) Go to Cloud Formation
+-   A sandbox stack will have the name: "amplify-proj-TarikVu-sandbox...."
+
 
 ### Sign in page:
 This sign in page is a defaulted one provided by AWS amplify, at the moment it is possible to modify the CSS styling, however modifying the UI in depth may take more research.
