@@ -83,8 +83,10 @@ AWS Amplify is a set of tools and services that help developers build scalable f
  
 ## <a name="cloud"></a> How to use the cloud
 Refer to this [article](https://docs.amplify.aws/react/start/account-setup/) to setup the local enviroment.
-
+### What is a sandbox?
+The sandbox enviroment is used for local development and does not incur costs with AWS.
 A cloud sandbox enviroment is needed in order to use Amplify's backend.
+### Starting up the sandbox
 - After setting up the cloud, we can log into AWS with
 ``` aws sso login ```
 - We can spin up a local enviroment with: 
