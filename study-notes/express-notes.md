@@ -1,3 +1,65 @@
+| **Request Type**    | **Route Parameter**   | **Query Parameter**                  | **Request Body**                                  |
+|---------------------|------------------------|-------------------------------------|---------------------------------------------------|
+| **CRUD Type**       | GET, DELETE            | GET                                 | POST, PUT, PATCH                                 |
+
+### Examples:
+**Route Parameter**:
+```js
+// Client-side
+const boardResponse = await fetch(`http://localhost:5000/boards/${boardId}/${userId}`);
+const board = await boardResponse.json();
+
+// Server Side
+app.get('/boards/:userId', async (req, res) => {
+    try {
+        const userId = req.params.userId;
+        const boards = await Board.find({ userId });
+        res.status(200).json(boards);
+    } catch (error) {
+        res.status(400).json({ error: error.message });
+    }
+});
+```
+  
+**Query Parameter**: 
+```js
+// Client-side
+const productsResponse = await fetch('http://localhost:5000/products?category=electronics');
+const products = await productsResponse.json();
+
+// Server Side
+app.get('/products', async (req, res) => {
+    try {
+        const category = req.query.category;
+        const products = await Product.find({ category });
+        res.status(200).json(products);
+    } catch (error) {
+        res.status(400).json({ error: error.message });
+    }
+});
+```
+**Body Parameter**: 
+```js
+// Client-side
+const createUserResponse = await fetch('http://localhost:5000/users', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: "John Doe", email: "john@example.com" })
+});
+const newUser = await createUserResponse.json();
+
+// Server Side
+app.post('/users', async (req, res) => {
+    try {
+        const { name, email } = req.body;
+        const newUser = await User.create({ name, email });
+        res.status(201).json(newUser);
+    } catch (error) {
+        res.status(400).json({ error: error.message });
+    }
+});
+```
+
 ### **1. Route (Path) Parameters**
 **When to Use:**
 - **Resource Identification**: When you need to identify a specific resource or entity.
