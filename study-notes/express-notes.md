@@ -6,6 +6,8 @@
 **Use Case:**
 - `GET /users/:userId` to get user details.
 - `DELETE /posts/:postId` to delete a specific post.
+- Access in Express: `req.params`
+- Example: `/users/:userId`
 
 **Typical Usage:**
 - Used in RESTful APIs to define resource paths.
@@ -20,6 +22,8 @@
 **Use Case:**
 - `GET /products?category=electronics&sort=price` to filter and sort products.
 - `GET /orders?status=shipped&page=2` to get a specific page of orders with a given status.
+- Access in Express: `req.query`
+- Example: `/users?userId=123`
 
 **Typical Usage:**
 - Used for queries that don't directly identify a resource but modify how data is retrieved.
@@ -34,6 +38,8 @@
 **Use Case:**
 - `POST /users` with body `{ "name": "John Doe", "email": "john@example.com" }` to create a new user.
 - `PUT /products/123` with body `{ "price": 19.99 }` to update the price of a specific product.
+- Access in Express: `req.body`
+- Example: `{ userId: 123, boardName: 'New Board' }` in a `POST` request.
 
 **Typical Usage:**
 - Used in `POST`, `PUT`, or `PATCH` requests to send data to the server.
@@ -45,4 +51,3 @@
 - **Query Parameters**: Filter or modify data (e.g., `/products?category=electronics`).
 - **Request Body**: Submit or update data (e.g., `{ "name": "John Doe" }` in a `POST` request).
 
-Each type is suited to different tasks in web development, helping structure and manage data flow in your applications.
