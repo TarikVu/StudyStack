@@ -60,6 +60,42 @@ app.post('/users', async (req, res) => {
 });
 ```
 
+**Route & Body (PATCH)**:
+```js
+// Client side
+const userId = '123'; // Example user ID
+const updateUserResponse = await fetch(`http://localhost:5000/users/${userId}`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: "Jane Doe", email: "jane@example.com" })
+});
+const updatedUser = await updateUserResponse.json();
+
+// Server side
+app.patch('/users/:userId', async (req, res) => {
+    try {
+        const { userId } = req.params;
+        const { name, email } = req.body;
+
+        // Assuming you have a User model with a findByIdAndUpdate method
+        const updatedUser = await User.findByIdAndUpdate(
+            userId,
+            { name, email }, // Update fields
+            { new: true }    // Return the updated document
+        );
+
+        if (!updatedUser) {
+            return res.status(404).json({ error: 'User not found' });
+        }
+
+        res.status(200).json(updatedUser);
+    } catch (error) {
+        res.status(400).json({ error: error.message });
+    }
+});
+
+```
+
 ### **1. Route (Path) Parameters**
 **When to Use:**
 - **Resource Identification**: When you need to identify a specific resource or entity.
